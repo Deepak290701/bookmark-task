@@ -1,0 +1,40 @@
+<div class="card mt-5 p-5">
+    <div class="card-content">   
+        <form action="/addBookMark" method="POST">
+            <div class="form-group">
+                <label for="name">Title</label>
+                
+                <input
+                type="text"
+                id="title"
+                name="title"
+                class="form-control"
+                placeholder="Enter title..."
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label for="name">Site Url</label>
+                <input
+                type="url"
+                id="websiteURL"
+                name="websiteURL"
+                class="form-control"
+                placeholder="Enter Site URL..."
+                required
+                />
+            </div>
+            
+            <button type="submit" class="btn btn-success btn-block  ">
+                Submit
+            </button>
+        </form>
+        <br>
+        <a href="/">
+            <button class="btn btn-secondary btn-block ">
+                Cancel
+            </button>
+        </a>
+
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<% if(typeof bookmarks != 'undefined'){ %>
+    <% console.log(bookmarks.length) %>
+    <% bookmarks.forEach(function(bookmark) { %>
+        
+        <div class="card task-content ">
+            <div class="card-content p-3">
+                <div class="wrapper">
+                    <div class="inner-wrapper">
+                        <h5><%= bookmark.title %> <a href="<%= bookmark.websiteURL %>" target="_blank"><i class="fas fa-link"></i></a> </h5>
+                        <p>id - <%= bookmark._id %></p>
+                    </div>
+                </div>
+                <div class="task-extra-info">
+                    <p>Created At - <%= moment(bookmark.createdAt).format('MMMM Do YYYY,h:mm:ss a') %></p>
+                    <p>Updated At - <%= moment(bookmark.updatedAt).format('MMMM Do YYYY,h:mm:ss a') %></p>
+                    <div class="task-edit-delete">
+                        <a href="/edit/<%-bookmark._id%>"><i class="fas fa-edit"></i></a>
+                        <a href="/delete/<%-bookmark._id%>"><i class="fas fa-trash"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    <%}); %>
+<%}%>
+
+<% if(bookmarks.length == 0){ %>
+    <br>
+    <p>You have <strong>not</strong> created any task . </p>
+
+<%}%>
+
+
+
+
+

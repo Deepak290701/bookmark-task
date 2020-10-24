@@ -1,0 +1,19 @@
+body{
+    background-image: url("https://media.istockphoto.com/vectors/abstract-white-background-vector-id1146367620?b=1&k=6&m=1146367620&s=612x612&w=0&h=EvkoSZ210kefNX_xVfpEeTXmQHu2-3McIzEFDB6XqJM=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-extra-info{
+    display: flex;
+    justify-content: space-between;
+}
+.task-edit-delete .fa-edit,.fa-link{
+    color: rgb(88, 88, 226) !important;
+}
